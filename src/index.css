@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f0f0f0;
+  min-height: 100vh;
+
+  &&::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.div {
+  width: 100%;
+  padding: 20px;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 800px;
+  min-width: 450px;
+  margin:auto;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #00e676;
+  border-radius: 10px;
+  background-color: #121212;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease;
+  &&::placeholder {
+    color: #fff;
+  }
+}
+
+.delete-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.delete-container li{
+  flex:1;
+  padding: 12px;
+  border: 2px solid #00e676;
+  border-radius: 10px;
+  background-color: #121212;
+  color: #fff;
+  list-style: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dl-btn{
+  padding:0px 12px;
+  font-weight: bold;
+  background-color: #e60000;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  &&:hover{
+  background-color: #e25d5d;
+  }
+}
+.delAll-btn{
+  background-color: #ea9310;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  &&:hover{
+    background-color: tomato;
+    color: white;
+  }
+}
+button {
+  padding: 12px 16px;
+  background-color: #00bcd4;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &&:hover {
+    background-color: #0097a7;
+  }
+}
